@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>My Library</h1>
+        <button id="newBookBtn">New Book</button>
+    </header>
+
+    <div class="library-container" id="libraryContainer"></div>
+
+    <dialog id="bookDialog">
+  <form method="dialog" id="bookForm" class="book-form">
+    <h2>Add a New Book</h2>
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="number" id="pages" placeholder="Pages" required>
+    <label>
+      <input type="checkbox" id="read"> Read
+    </label>
+    <div class="form-buttons">
+      <button type="submit">Add Book</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
     <script src="main.js"></script>
 </body>
 </html>
