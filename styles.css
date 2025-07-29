@@ -95,6 +95,21 @@ dialog {
   color: white;
 }
 
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 250px;
+}
+
+.book-form label {
+  display: flex;
+  flex-direction: column;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
 .book-form input[type="text"],
 .book-form input[type="number"] {
   background-color: #2d2d42;
@@ -102,8 +117,8 @@ dialog {
   border: 1px solid #444;
   border-radius: 6px;
   padding: 0.5rem;
+  margin-top: 0.3rem;
 }
-
 .book-form input::placeholder {
   color: #999;
 }
@@ -143,4 +158,16 @@ dialog {
 
 .form-buttons button#cancelBtn:hover {
   background-color: #4b5563;
+}
+
+/* Quitar flechas en Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Quitar flechas en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
